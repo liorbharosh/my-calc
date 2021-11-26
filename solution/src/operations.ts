@@ -62,6 +62,3 @@ export function pow(num: number, exp: number): number {
     return root(_integerExponentOnlyPow(num, expNumerator), expDenominator);
 }
 
-
-
-console.log(pow(3, 2.55));
