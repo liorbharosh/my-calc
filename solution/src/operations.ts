@@ -47,12 +47,6 @@ export function root(num: number, root: number): number {
 }
 
 
-function _floor(num: number): number {
-    let decimals = num % 1;
-    return num - decimals;
-}
-
-
 function _decimalToFraction(decimal: number) {
     // eslint-disable-next-line no-var
     for(var denominator = 1; (decimal * denominator) % 1 !== 0; denominator++);
