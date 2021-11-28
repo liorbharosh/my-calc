@@ -1,11 +1,9 @@
 import ICalcOutputBoundry from "../interfaces/ICalcOutputBoundry";
 
-class CalcResponseModel{
-    readonly answer: ICalcOutputBoundry;
+export default class CalcResponseModel{
+    readonly answer: number;
 
-    constructor() {
-        this.answer = {
-            answer: global.NaN
-        };
+    constructor(answer: number | null) {
+        this.answer = answer ? answer : global.NaN;
     }
 }
