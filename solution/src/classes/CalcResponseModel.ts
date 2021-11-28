@@ -1,5 +1,3 @@
-import ICalcOutputBoundry from "../interfaces/ICalcOutputBoundry";
-
 export default class CalcResponseModel{
     readonly answer: number;
 
