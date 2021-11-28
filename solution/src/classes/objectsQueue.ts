@@ -1,4 +1,3 @@
-
 class objectsQueue {
     readonly items;
 
