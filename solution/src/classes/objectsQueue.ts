@@ -23,4 +23,8 @@ class objectsQueue {
         // delete this.items[0];
         return head;
     }
+
+    peek(): object {
+        return this.items[0];
+    }
 }
