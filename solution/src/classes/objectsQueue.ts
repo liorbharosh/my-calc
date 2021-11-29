@@ -11,9 +11,16 @@ class objectsQueue {
 
     pop(): object {
         let head = this.items[0];
-        for(let i = 1; i < this.items.length; i++) {
-            this.items[i-1] = this.items[i];
+        if (this.items.length == 1) {
+            this.items.pop();
         }
+        else if (this.items.length > 1) {
+            for(let i = 0; i < this.items.length - 1; i++) {
+                this.items[i] = this.items[i+1];
+            }
+            this.items.pop();
+        }
+        // delete this.items[0];
         return head;
     }
 }
