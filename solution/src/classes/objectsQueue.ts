@@ -1,5 +1,5 @@
 class OperationsQueue {
-    readonly items;
+    private items;
 
     constructor(){
         this.items = Array<Operation>();
