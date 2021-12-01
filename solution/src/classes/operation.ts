@@ -1,7 +1,7 @@
 class Operation {
-    readonly name;
-    readonly arg1;
-    readonly arg2;
+    readonly name: string;
+    readonly arg1: number;
+    readonly arg2: number;
 
     constructor(name: string, arg1: number, arg2: number) {
         this.name = name;
