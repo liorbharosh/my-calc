@@ -1,15 +1,15 @@
-class objectsQueue {
+class OperationsQueue {
     readonly items;
 
     constructor(){
-        this.items = Array<object>();
+        this.items = Array<Operation>();
     }
 
-    push(obj: object): void {
-        this.items.push(obj);
+    push(op: Operation): void {
+        this.items.push(op);
     }
 
-    pop(): object {
+    pop(): Operation {
         let head = this.items[0];
         if (this.items.length == 1) {
             this.items.pop();
@@ -24,7 +24,7 @@ class objectsQueue {
         return head;
     }
 
-    peek(): object {
+    peek(): Operation {
         return this.items[0];
     }
 }
