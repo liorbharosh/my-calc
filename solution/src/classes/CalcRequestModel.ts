@@ -1,7 +1,7 @@
 export default class CalcRequestModel {
-    operationsQueue: objectsQueue;
+    operationsQueue: OperationsQueue;
 
-    constructor(operationsQueue: objectsQueue) {
+    constructor(operationsQueue: OperationsQueue) {
         this.operationsQueue = operationsQueue;
     }
 }
