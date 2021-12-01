@@ -27,4 +27,9 @@ class OperationsQueue {
     peek(): Operation {
         return this.items[0];
     }
+
+    isEmpty(): boolean {
+        if (this.items.length > 0) return false;
+        return true;
+    }
 }
